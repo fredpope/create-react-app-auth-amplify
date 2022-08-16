@@ -8,7 +8,6 @@ import aws_exports from './aws-exports';
 import { Button, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 Amplify.configure(aws_exports);
 
 /**
@@ -75,12 +74,11 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <AmplifySignOut />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <body>
       <Card className="text-center">
         <Card.Header>
           <strong>Address: </strong>
@@ -96,7 +94,6 @@ function App() {
           </Button>
         </Card.Body>
       </Card>
-      </body>
     </div>
   );
 }
