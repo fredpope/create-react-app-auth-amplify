@@ -13,7 +13,15 @@
     },
     "categories": {
       "auth": {
-        "cognitocf0c6096": {}
+        "cognitocf0c6096": {},
+        "true": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "Sureshakevn1Mi-devd",
+          "Id": "2f9e35aef564484cbcce89b53625de2c",
+          "Region": "us-east-1"
+        }
       }
     }
   },
