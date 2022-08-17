@@ -10,7 +10,7 @@ function App({ isPassedToWithAuthenticator, signOut, user }) {
   if (!isPassedToWithAuthenticator) {
     throw new Error(`isPassedToWithAuthenticator was not provided`);
   }
-
+ 
   return (
     <>
       <h1>Hello {user.username}</h1>
