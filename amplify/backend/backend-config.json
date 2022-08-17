@@ -6,7 +6,8 @@
       "dependsOn": [],
       "frontendAuthConfig": {
         "socialProviders": [
-          "GOOGLE"
+          "GOOGLE",
+          "APPLE"
         ],
         "usernameAttributes": [],
         "signupAttributes": [
