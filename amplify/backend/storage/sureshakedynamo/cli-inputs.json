@@ -1,0 +1,20 @@
+{
+  "resourceName": "sureshakedynamo",
+  "tableName": "item",
+  "partitionKey": {
+    "fieldName": "name",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "gsiid",
+      "partitionKey": {
+        "fieldName": "name",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": [
+    "sureshakedynamoTriggerc2789294"
+  ]
+}
