@@ -15,6 +15,13 @@ function App({ isPassedToWithAuthenticator, signOut, user }) {
     <>
       <h1>Hello {user.username}</h1>
       <button onClick={signOut}>Sign out</button>
+      <main>
+          <h1>Hello {user.username}</h1>
+          <button onClick={signOut}>Sign out</button>
+        </main>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      </header>
     </>
   );
 }

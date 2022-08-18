@@ -22,6 +22,16 @@
           "Id": "2f9e35aef564484cbcce89b53625de2c",
           "Region": "us-east-1"
         }
+      },
+      "function": {
+        "sureshakedynamoTriggerc2789294": {
+          "deploymentBucketName": "amplify-authcra-devd-225903-deployment",
+          "s3Key": "amplify-builds/sureshakedynamoTriggerc2789294-47704653737a4e73304b-build.zip"
+        },
+        "sureshake05aefc8f": {
+          "deploymentBucketName": "amplify-authcra-devd-225903-deployment",
+          "s3Key": "amplify-builds/sureshake05aefc8f-4a33507867676f664971-build.zip"
+        }
       }
     }
   },
