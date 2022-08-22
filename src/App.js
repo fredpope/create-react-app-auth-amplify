@@ -1,38 +1,34 @@
-import { Amplify } from 'aws-amplify';
-import logo from './images/sslogo.png';
+import { Amplify} from 'aws-amplify';
+import React from 'react';
+import './App.css'
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import { Home } from "./Home";
+import { SignInHeader } from "./SignInHeader";
+import { SignInFooter } from "./SignInFooter";
 import '@aws-amplify/ui-react/styles.css';
+import "./styles.css";
 
-import awsExports from './aws-exports';
-Amplify.configure(awsExports);
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
-function App({ isPassedToWithAuthenticator, signOut, user }) {
-  if (!isPassedToWithAuthenticator) {
-    throw new Error(`isPassedToWithAuthenticator was not provided`);
-  }
+function App({signOut, user}) {
  
   return (
-    <>
-      <h1>Hello Fred {user.username}</h1>
-      <button onClick={signOut}>Sign out</button>
-      <main>
-          <h1>Hello {user.username}</h1>
-          <button onClick={signOut}>Sign out</button>
-        </main>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </>
+    <Home/>
   );
 }
 
-export default withAuthenticator(App);
-
-export async function getStaticProps() {
-  return {
-    props: {
-      isPassedToWithAuthenticator: true,
+export default withAuthenticator(App, {
+  components: {
+    Header,
+    SignIn: {
+      Header: SignInHeader,
+      Footer: SignInFooter
     },
-  };
-} 
+    Footer
+  }
+});
+

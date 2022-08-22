@@ -13,6 +13,12 @@ code {
     monospace;
 }
 
+#root > div {
+  background-color: #FFFFFF;
+  
+}
+
+
 :root {
   --amplify-primary-color: #11a29b;
   --amplify-primary-tint: #3f6060;
